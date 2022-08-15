@@ -1,14 +1,36 @@
-// .container-card {
-//     border: 2px solid #F37878;
-//     background-color: #F9F9C5;
-//     border-radius: 8px;
-//     width: 150px;
-//     height: 200px;
-// }
+* {
+    justify-content: center;
+}
 
-// .card-img {
-//     background-color: #D9F8C4;
-//     width: 80%;
-//     height: 80px;
-//     margin: 0 auto;
-// }
+.container-catalogue {
+    width: 100vw;
+    height: auto;
+    background-color: #efffa9;
+    overflow: hidden;
+}
+
+.container-card {
+    padding: 64px 17px;
+    display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(3, 200px);
+	justify-items: center;
+	align-items: center;
+}
+
+.info-card {
+    border: 2px solid #CAB8FF;
+    background-color: #C1FFD7;
+    border-radius: 8px;
+    width: 150px;
+    height: 180px;
+    text-align: center;
+}
+
+.pagination ::ng-deep .ngx-pagination .current {
+    background: red;
+}
+
+
+

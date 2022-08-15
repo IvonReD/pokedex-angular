@@ -5,6 +5,7 @@ import { WelcomePageComponent } from './pages/welcome-page/welcome-page.componen
 
 const routes: Routes = [
 
+    { path: '', component: WelcomePageComponent },
     { path: 'welcome', component: WelcomePageComponent },
     { path: 'catalogue', component: CataloguePageComponent },
  
