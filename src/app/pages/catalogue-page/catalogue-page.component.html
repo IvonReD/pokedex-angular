@@ -1,0 +1,21 @@
+<navbar-component></navbar-component>
+<div class="container-catalogue">
+
+
+  <div class="container-card">
+    <div *ngFor="let item of arrayPokemons | paginate: { itemsPerPage: 15, currentPage: page, totalItems: resultData }">
+      <div >
+        <div class="card-img">
+          <img [src]="item.sprites.front_default" alt="">
+        </div>   
+        <h6> {{item.name}}</h6>  
+        <p> Altura: {{item.height}}</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <pagination-controls (pageChange)="page = $event; arrayPokemons = []; searchpokemon()"></pagination-controls>
+
+</div>
+
