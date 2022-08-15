@@ -5,7 +5,7 @@
 .container-catalogue {
     width: 100vw;
     height: auto;
-    background-color: #efffa9;
+    background-color: #fffaf2;
     overflow: hidden;
 }
 
@@ -20,17 +20,31 @@
 }
 
 .info-card {
-    border: 2px solid #CAB8FF;
-    background-color: #C1FFD7;
+    background-color: #F2D1D1;
+    color: #a42947;
     border-radius: 8px;
     width: 150px;
     height: 180px;
     text-align: center;
 }
 
+.pagination ::ng-deep ul > li:not(.active) > a {
+    color: #C6DCE4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
 .pagination ::ng-deep .ngx-pagination .current {
-    background: red;
+    background: #DAEAF1;
+    color: #AC7088;
+    border-radius: 30%;
+    font-weight: bolder;
 }
+
+
+
+
+
+
 
 
 

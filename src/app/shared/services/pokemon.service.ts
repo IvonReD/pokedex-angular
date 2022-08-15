@@ -9,11 +9,6 @@ export class PokemonService {
 constructor(
     private http : HttpClient
     ) { }
-
-// getPokemon(name:string) {
-//     return this.http.get(`${this.url}/${name}`)
-// }
-
 getPokemon (limit:number, offset: number) {
     return this.http.get(`${this.url}${limit}&offset=${offset}`)
 }
